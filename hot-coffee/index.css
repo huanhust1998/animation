@@ -1,0 +1,42 @@
+body {
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    width: 100vw;
+}
+
+.container {
+    height: 100%;
+    width: 100%;
+    background-color: aqua;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.cup-body {
+    height: 200px;
+    width: 300px;
+    background-color: white;
+    border-radius: 0px 0px 150px 150px;
+    overflow: hidden;
+    position: relative;
+}
+
+.cup-shade {
+    position: relative;
+    height: 300px;
+    width: 200px;
+    background-color: #F3F3F3;
+    margin-left: 42%;
+    margin-top: -3px;
+    transform: rotate(50deg);
+    z-index: 1;
+}
+
+.cup-handle{
+    position: absolute;
+    top: 0;
+    right: -100px;
+    z-index: 2;
+}

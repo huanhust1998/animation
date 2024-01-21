@@ -34,15 +34,15 @@ button>span {
 }
 
 button:focus {
-    animation: focus_button 2000ms ease-in-out;
+    animation: focus_button 2000ms ease-in-out forwards;
 }
 
 button:focus>span {
-    animation: disappear 2000ms ease-in-out;
+    animation: disappear 2000ms ease-in-out forwards;
 }
 
 button:focus>img {
-    animation: appear 2000ms ease-in-out;
+    animation: appear 2000ms ease-in-out forwards;
 }
  
 @keyframes focus_button {

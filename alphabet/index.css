@@ -1,0 +1,620 @@
+body {
+    padding: 0;
+    margin: 0;
+    background-color: blueviolet;
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 10px;
+    gap: 50px
+}
+
+.alphabet {
+    height: 100px;
+    width: 80px;
+    background-color: transparent;
+}
+
+.a {
+    border: 10px solid white;
+    border-bottom: 0px;
+    border-radius: 100px 100px 0px 0px;
+    position: relative;
+}
+
+.a::after {
+    content: "";
+    position: absolute;
+    width: 80px;
+    height: 10px;
+    top: 50px;
+    background-color: white;
+}
+
+.b {
+    position: relative;
+}
+
+.b::after {
+    content: "";
+    position: absolute;
+    height: 40px;
+    width: 60px;
+    background-color: transparent;
+    border: solid 10px white;
+    top: 0px;
+    border-radius: 0px 50px 50px 0px;
+}
+
+
+.b::before {
+    content: "";
+    position: absolute;
+    height: 40px;
+    width: 60px;
+    background-color: transparent;
+    border: solid 10px white;
+    top: 50px;
+    border-radius: 0px 50px 50px 0px;
+
+}
+
+.c {
+    height: 90px;
+    width: 90px;
+    border-radius: 1000px;
+    background-color: transparent;
+    border: solid 10px white;
+    position: relative;
+}
+
+.c::before {
+    content: "";
+    position: absolute;
+    z-index: 10;
+    width: 40px;
+    height: 90px;
+    left: 80px;
+    background-color: blueviolet;
+}
+
+.d {
+    height: 90px;
+    width: 60px;
+    background-color: transparent;
+    border: solid 10px white;
+    top: 0px;
+    border-radius: 0px 50px 50px 0px;
+}
+
+.e {
+    height: 90px;
+    width: 70px;
+    background-color: transparent;
+    border: solid 10px white;
+    border-right: none;
+    position: relative;
+}
+
+.e::after {
+    content: "";
+    width: 60px;
+    height: 10px;
+    background-color: white;
+    position: absolute;
+    top: 40px;
+}
+
+.f {
+    height: 100px;
+    width: 70px;
+    background-color: transparent;
+    border: solid 10px white;
+    border-right: none;
+    border-bottom: none;
+    position: relative;
+}
+
+.f::after {
+    content: "";
+    width: 60px;
+    height: 10px;
+    background-color: white;
+    position: absolute;
+    top: 40px;
+}
+
+
+.g {
+    height: 90px;
+    width: 90px;
+    border-radius: 1000px;
+    background-color: transparent;
+    border: solid 10px white;
+    position: relative;
+}
+
+.g::before {
+    content: "";
+    position: absolute;
+    z-index: 10;
+    width: 10px;
+    height: 35px;
+    left: 85px;
+    top: 10px;
+    background-color: white;
+    border-right: 10px solid blueviolet;
+    border-top: 50px solid blueviolet;
+}
+
+.g::after {
+    content: "";
+    position: absolute;
+    z-index: 10;
+    width: 40px;
+    height: 10px;
+    left: 70px;
+    top: 50px;
+    background-color: white; 
+}
+
+
+.h {
+    height: 100px;
+    width: 60px;
+    background-color: transparent;
+    border-left: 10px solid white;
+    border-right: 10px solid white;
+    position: relative;
+    
+}
+
+.h::before {
+    content: "";
+    position: absolute;
+    top: 45px;
+    height: 10px;
+    width: 60px;
+    background-color: white;
+
+}
+
+.i {
+    height: 100px;
+    width: 10px;
+    background-color: white;
+    margin-left: 40px;
+    position: relative;
+}
+
+
+.i::before{
+    content:"";
+    position: absolute;
+    height: 10px;
+    width: 60px;
+    top:0;
+    left: -25px;
+    background-color: white;
+    border-radius: 10px;
+
+}
+
+.i::after{
+    content:"";
+    position: absolute;
+    height: 10px;
+    width: 60px;
+    top:90px;
+    left: -25px;
+    background-color: white;
+    border-radius: 10px;
+
+}
+
+
+.j {
+    height: 100px;
+    width: 10px;
+    background-color: white;
+    margin-left: 70px;
+    position: relative;
+    border-radius: 0 0 20px 0;
+}
+
+.j::before{
+    content:"";
+    position: absolute;
+    height: 10px;
+    width: 60px;
+    top:0;
+    left: -25px;
+    background-color: white;
+    border-radius: 10px;
+}
+
+.j::after{
+    content:"";
+    position: absolute;
+    height: 10px;
+    width: 30px;
+    top:90px;
+    left: -25px;
+    background-color: white;
+    border-radius: 10px;
+}
+
+.k{
+    height: 100px;
+    width: 10px;
+    background-color: white;
+    margin-left: 50px;
+    position: relative;
+    border-radius: 10px;
+}
+
+.k::before{
+    content: "";
+    height: 70px;
+    width: 10px;
+    background-color: white;
+    margin-left: 50px;
+    position: absolute;
+    transform: rotate(40deg);
+    right: -22px;
+    top:-5px;
+    border-radius: 10px;
+
+}
+
+.k::after{
+    content: "";
+    height: 70px;
+    width: 10px;
+    background-color: white;
+    margin-left: 50px;
+    position: absolute;
+    transform: rotate(140deg);
+    right: -30px;
+    top:35px;
+    border-radius: 10px;
+
+}
+
+.l {
+    height: 90px;
+    width: 50px;
+    border-left: 10px solid white;
+    border-bottom: 10px solid white;
+    margin-left: 70px;
+}
+
+.m {
+    height: 100px;
+    width: 80px;
+    border-left: 10px solid white;
+    border-right: 10px solid white;
+    position: relative;
+}
+
+
+.m::before {
+    content:"";
+    position: absolute;
+    width: 10px;
+    height: 75px;
+    transform: rotate(140deg);
+    background-color: white;
+    left:13px;
+    top: -5px;
+}
+
+.m::after {
+    content:"";
+    position: absolute;
+    width: 10px;
+    height: 75px;
+    transform: rotate(40deg);
+    background-color: white;
+    right:13px;
+    top: -5px;
+}
+
+.n {
+    height: 100px;
+    width: 80px;
+    border-right: 10px solid white;
+    border-left: 10px solid white;
+    position: relative;
+}
+
+.n::before {
+    content:"";
+    position: absolute;
+    width: 10px;
+    height: 125px;
+    transform: rotate(135deg);
+    background-color: white;
+    left:35px;
+    top: -13px;
+}
+
+.o{
+    height: 90px;
+    width: 80px;
+    border: 10px solid white;
+    border-radius: 999px;
+}
+
+.p{
+    height: 40px;
+    width: 60px;
+    border:solid 10px white;
+    border-radius: 0 100px 100px 0;
+    position: relative;
+}
+
+.p::before{
+    content:"";
+    position: absolute;
+    height: 50px;
+    width: 10px;
+    background-color: white;
+    top: 50px;
+    left:-10px;
+}
+
+.q{
+    height: 40px;
+    width: 60px;
+    border:solid 10px white;
+    border-radius: 100px 0 0 100px;
+    position: relative;
+}
+
+.q::before{
+    content:"";
+    position: absolute;
+    height: 50px;
+    width: 10px;
+    background-color: white;
+    top: 50px;
+    right:-10px;
+}
+
+.r{
+    height: 40px;
+    width: 50px;
+    border:solid 10px white;
+    border-radius: 0 100px 100px 0;
+    position: relative;
+}
+
+.r::before{
+    content:"";
+    position: absolute;
+    height: 50px;
+    width: 10px;
+    background-color: white;
+    top: 50px;
+    left:-10px;
+}
+
+
+.r::after{
+    content:"";
+    position: absolute;
+    height: 80px;
+    width: 10px;
+    background-color: white;
+    top: 30px;
+    left:20px;
+    transform: rotate(130deg);
+}
+
+.s {
+    height: 40px;
+    width: 50px;
+    border: solid 10px white;
+    border-radius: 100px 0 0 100px;
+    position: relative;
+    border-right: none;
+    position: relative;
+}
+
+.s::before {
+    content: "";
+    height: 40px;
+    width: 50px;
+    border: solid 10px white;
+    border-radius: 100px 0 0 100px;
+    position: relative;
+    border-right: none;
+    position: absolute;
+    transform: rotate(180deg);
+    top: 38px;
+    left: 10px;
+}
+
+
+
+.t {
+    height: 100px;
+    width: 10px;
+    background-color: white;
+    margin-left: 40px;
+    position: relative;
+}
+
+
+.t::before{
+    content:"";
+    position: absolute;
+    height: 10px;
+    width: 80px;
+    top:0;
+    left: -35px;
+    background-color: white;
+    border-radius: 10px;
+
+}
+
+.u {
+    height: 90px;
+    width: 70px;
+    background-color: transparent;
+    border: solid 10px white;
+    border-top: none;
+    border-radius: 0 0 100px 100px;
+    position: relative;
+}
+
+.u::before {
+    content:"";
+    height: 100px;
+    width: 10px;
+    position: absolute;
+    background-color: white;
+    left: 70px;
+    border-radius: 10px;
+}
+
+
+.v {
+    position: relative;
+}
+
+.v::after {
+    content:"";
+    height: 100px;
+    width: 10px;
+    position: absolute;
+    background-color: white;
+    transform: rotate(150deg);
+    left: 25px;
+    border-radius: 10px;
+}
+
+.v::before {
+    content:"";
+    height: 100px;
+    width: 10px;
+    position: absolute;
+    background-color: white;
+    transform: rotate(30deg);
+    left: 70px;
+    border-radius: 10px;
+}
+
+
+.w {
+    position: relative;
+    height: 100px;
+    width: 90px;
+    border: solid 10px white;
+    border-top:none;
+    border-bottom: none;
+    margin-left: 30px;
+}
+
+
+.w::after {
+    content:"";
+    height: 100px;
+    width: 10px;
+    position: absolute;
+    background-color: white;
+    transform: rotate(30deg);
+    left: 15px;
+    border-radius: 10px;
+    top:5px
+}
+
+.w::before {
+    content:"";
+    height: 100px;
+    width: 10px;
+    position: absolute;
+    background-color: white;
+    transform: rotate(150deg);
+    left: 65px;
+    border-radius: 10px;
+    top:5px
+
+}
+
+.x {
+    position: relative;
+}
+
+.x::after {
+    content:"";
+    height: 100px;
+    width: 10px;
+    position: absolute;
+    background-color: white;
+    transform: rotate(150deg);
+    left: 25px;
+    border-radius: 10px;
+}
+
+.x::before {
+    content:"";
+    height: 100px;
+    width: 10px;
+    position: absolute;
+    background-color: white;
+    transform: rotate(30deg);
+    left: 25px;
+    border-radius: 10px;
+}
+
+
+.y {
+    position: relative;
+}
+
+.y::after {
+    content:"";
+    height: 50px;
+    width: 10px;
+    position: absolute;
+    background-color: white;
+    transform: rotate(150deg);
+    left: 15px;
+    border-radius: 10px;
+}
+
+.y::before {
+    content:"";
+    height: 100px;
+    width: 10px;
+    position: absolute;
+    background-color: white;
+    transform: rotate(30deg);
+    left: 25px;
+    border-radius: 10px;
+}
+
+.z {
+    position: relative;
+    height: 80px;
+    width: 80px;
+    border: 10px solid white;
+    border-left: none;
+    border-right: none;
+}
+
+.z::after {
+    content:"";
+    position: absolute;
+    height: 120px;
+    width: 10px;
+    background-color: white;
+    transform: rotate(40deg);
+    left: 35px;
+    top:-20px;
+    border-radius: 10px;
+}

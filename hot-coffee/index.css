@@ -149,6 +149,6 @@ body {
 
     100% {
         opacity: 0;
-        transform: translateY(-200px) translateX(-100px) scale(2);
+        transform: translateY(-200px) translateX(-100px) scale(3);
     }
 }
